@@ -12,6 +12,7 @@
 </head>
 <body>
 
+<!--div id="h" style="position: absolute; left: 100px; right: 100px; top:66px; bottom:66px; overflow: auto;"-->
 <div class="block" style="background: #ff1000;"></div>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus odio, bibendum eget luctus in, condimentum quis massa. Vestibulum at felis sed sapien euismod pretium. Nulla eget risus libero, sed dictum nibh. Duis lacinia scelerisque sapien, quis feugiat leo fringilla ut. Curabitur ut diam euismod erat consequat dictum. Nullam auctor, diam nec mollis tristique, urna erat varius tortor, in bibendum enim turpis sit amet lacus. Vivamus id mi at lacus hendrerit pretium. Aenean vehicula metus vel arcu adipiscing ullamcorper. Curabitur ac neque ultricies lectus convallis sollicitudin eget sit amet urna. Mauris viverra faucibus eleifend. Phasellus at magna quis magna sodales condimentum.</p>
 
@@ -52,12 +53,15 @@
 <p>Nulla aliquet dictum convallis. Suspendisse commodo egestas urna eu congue. Ut aliquam leo id ligula suscipit fringilla vulputate elit tempor. Cras bibendum tellus non sem fringilla quis cursus erat fringilla. Proin tincidunt hendrerit enim in varius. Sed convallis ultrices sodales. Maecenas ullamcorper magna et nunc tempus pulvinar. Nam venenatis felis arcu. Nunc sodales sollicitudin mauris, in vulputate quam iaculis consectetur. Maecenas pellentesque nibh et dui rhoncus suscipit. Cras imperdiet, nisi in condimentum congue, lacus ligula tincidunt tortor, nec condimentum justo ante eget eros.</p>
 
 <p>Sed lectus enim, tristique id feugiat nec, vulputate scelerisque odio. Praesent vestibulum mauris sit amet neque vulputate in vehicula sem tempor. Suspendisse vestibulum orci vitae risus sollicitudin eu ultrices leo laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut molestie orci. Donec lacus dui, scelerisque eget laoreet in, ornare eget justo. Vivamus commodo gravida augue, et dapibus erat gravida ut. Fusce sed lacus vel nulla vehicula tempus. Ut a tempus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer in lacus nibh. Nam ornare nisl in risus ullamcorper sed tempor metus porta.</p>
+<!--/div-->
 
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript" src="js/sticky.js"></script>
+<script type="text/javascript" src="js/stickystack.js"></script>
 <script>
 $(function () {
-    $('div').stickyStack();
+    $('div').stickyStack({
+//        context: '#h'
+    });
 });
 </script>
 </body>	
